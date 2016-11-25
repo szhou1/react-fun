@@ -1,0 +1,28 @@
+{
+  "name": "react-fun",
+  "version": "1.0.0",
+  "description": "Playing around with React component lifecycle",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha test/**/*"
+  },
+  "author": "Steve Zhou",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^6.2.8",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "webpack": "^1.13.3"
+  }
+}
