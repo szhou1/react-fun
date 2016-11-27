@@ -1,6 +1,5 @@
 import React from 'react';
 import Todo from './Todo.js';
-// const Todo = require('./Todo.jsx');
 
 export default class TodoList extends React.Component {
 

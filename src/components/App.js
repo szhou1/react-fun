@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TodoList from './TodoList.js';
-// const TodoList = require('../components/TodoList.jsx');
 
 export default class App extends React.Component {
 
@@ -69,7 +68,7 @@ export default class App extends React.Component {
     console.log('render()');
     return (
       <div>
-        <h3>Name: {this.state.name}</h3>
+        <h3>Naaaame: {this.state.name}</h3>
         <h3>Age: {this.state.age}</h3>
         <button onClick={this.handleMakeOlder.bind(this)} >Make Older!</button>
         <button onClick={this.handleMakeYounger.bind(this)} >Make Younger!</button>
