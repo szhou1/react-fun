@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TodoList from './TodoList.js';
+// const TodoList = require('../components/TodoList.jsx');
 
-class App extends React.Component {
+export default class App extends React.Component {
 
   constructor(props) {
     super();
@@ -44,9 +46,16 @@ class App extends React.Component {
 
   handleMakeOlder() {
     console.log('handleMakeOlder()');
+    this.setState((prevState, props) => {
+      console.log('prevState', prevState);
+      console.log('props', props);
+    })
+
+
     this.setState({
       age: this.state.age + 1
     })
+
   }
 
   handleMakeYounger() {
@@ -64,9 +73,10 @@ class App extends React.Component {
         <h3>Age: {this.state.age}</h3>
         <button onClick={this.handleMakeOlder.bind(this)} >Make Older!</button>
         <button onClick={this.handleMakeYounger.bind(this)} >Make Younger!</button>
+        <TodoList> </TodoList>
       </div>
     )
   }
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+// ReactDOM.render(<App/>, document.getElementById('app'));
